@@ -71,7 +71,7 @@ Hibernate: insert into event_entity (alert, duration, host, type, id) values (?,
 2021-05-26 18:51:26.405  INFO 6536 --- [           main] com.sushil.cs.Application                : Finished Processing data
 2021-05-26 18:51:26.405  INFO 6536 --- [           main] com.sushil.cs.Application                : Application Started Successfully`
 
-### 2. Generated eventLogDb.log (Database file)
+### 2. Generated eventLogDb.log (Database file):
 `/*C1*/SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
 COMMIT
@@ -85,6 +85,6 @@ COMMIT
 INSERT INTO EVENT_ENTITY VALUES('scsmbstgrc',TRUE,8,NULL,NULL)
 COMMIT`
 
-### Screenshot:
+### 3. Screenshot:
 
 ![image](https://user-images.githubusercontent.com/33152557/119713882-d6df1400-be7f-11eb-9b8b-2cb1a5c88831.png)
