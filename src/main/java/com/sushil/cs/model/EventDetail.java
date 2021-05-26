@@ -6,6 +6,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
 
+/**
+ * The type Event detail.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class EventDetail {
 
@@ -15,6 +18,15 @@ public class EventDetail {
     private String host;
     private Long timestamp;
 
+    /**
+     * Instantiates a new Event detail.
+     *
+     * @param id        the id
+     * @param state     the state
+     * @param type      the type
+     * @param host      the host
+     * @param timestamp the timestamp
+     */
     @JsonCreator
     EventDetail(@JsonProperty(value="id", required = true) String id, @JsonProperty(value="state", required = true) State state, @JsonProperty("type") String type,
              @JsonProperty("host") String host, @JsonProperty(value="timestamp", required = true) Long timestamp) {
@@ -26,50 +38,109 @@ public class EventDetail {
     }
 
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(String id) {
         this.id = id;
     }
 
+    /**
+     * Gets state.
+     *
+     * @return the state
+     */
     public State getState() {
         return state;
     }
 
+    /**
+     * Sets state.
+     *
+     * @param state the state
+     */
     public void setState(State state) {
         this.state = state;
     }
 
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
     public void setType(String type) {
         this.type = type;
     }
 
+    /**
+     * Gets host.
+     *
+     * @return the host
+     */
     public String getHost() {
         return host;
     }
 
+    /**
+     * Sets host.
+     *
+     * @param host the host
+     */
     public void setHost(String host) {
         this.host = host;
     }
 
+    /**
+     * Gets timestamp.
+     *
+     * @return the timestamp
+     */
     public Long getTimestamp() {
         return timestamp;
     }
 
+    /**
+     * Sets timestamp.
+     *
+     * @param timestamp the timestamp
+     */
     public void setTimestamp(Long timestamp) {
         this.timestamp = timestamp;
     }
 
 
+    /**
+     * The enum State.
+     */
     public enum State {
+        /**
+         * Started state.
+         */
         @JsonProperty("STARTED")
         STARTED,
+        /**
+         * Finished state.
+         */
         @JsonProperty("FINISHED")
         FINISHED
     }

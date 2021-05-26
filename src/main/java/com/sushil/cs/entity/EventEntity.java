@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * The type Event entity.
+ */
 @Entity
 public class EventEntity {
 
@@ -14,8 +17,20 @@ public class EventEntity {
     private String host;
     private boolean alert;
 
+    /**
+     * Instantiates a new Event entity.
+     */
     public EventEntity(){}
 
+    /**
+     * Instantiates a new Event entity.
+     *
+     * @param id       the id
+     * @param duration the duration
+     * @param type     the type
+     * @param host     the host
+     * @param alert    the alert
+     */
     public EventEntity(String id, Long duration, String type, String host, boolean alert) {
         super();
         this.id = id;
@@ -25,34 +40,74 @@ public class EventEntity {
         this.alert = alert;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(String id) {
         this.id = id;
     }
 
+    /**
+     * Gets duration.
+     *
+     * @return the duration
+     */
     public Long getDuration() {
         return duration;
     }
 
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
     public String getType() {
         return type;
     }
 
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
     public void setType(String type) {
         this.type = type;
     }
 
+    /**
+     * Gets host.
+     *
+     * @return the host
+     */
     public String getHost() {
         return host;
     }
 
+    /**
+     * Sets host.
+     *
+     * @param host the host
+     */
     public void setHost(String host) {
         this.host = host;
     }
 
+    /**
+     * Is alert boolean.
+     *
+     * @return the boolean
+     */
     public boolean isAlert() {
         return alert;
     }

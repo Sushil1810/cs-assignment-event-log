@@ -24,6 +24,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static com.sushil.cs.model.EventDetail.State.STARTED;
 
+/**
+ * The type Application.
+ */
 @SpringBootApplication
 @EnableJpaRepositories
 public class Application implements ApplicationRunner{
@@ -37,6 +40,13 @@ public class Application implements ApplicationRunner{
     private Map<String, EventDetail> startedMap = new ConcurrentHashMap<>();
     private Map<String, EventDetail> finishedMap = new ConcurrentHashMap<>();
 
+    /**
+     * Instantiates a new Application.
+     *
+     * @param objectMapper          the object mapper
+     * @param eventConverterService the event converter service
+     * @param eventRepository       the event repository
+     */
     @Autowired
     public Application(ObjectMapper objectMapper, EventConverterService eventConverterService, EventRepository eventRepository) {
         this.objectMapper = objectMapper;
@@ -44,6 +54,12 @@ public class Application implements ApplicationRunner{
         this.eventRepository = eventRepository;
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws Exception the exception
+     */
     public static void main(String[] args) throws Exception {
         log.info("Starting Application");
         SpringApplication.run(Application.class, args);
