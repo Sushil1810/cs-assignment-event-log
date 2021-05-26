@@ -28,7 +28,7 @@ public class EventDetail {
      * @param timestamp the timestamp
      */
     @JsonCreator
-    EventDetail(@JsonProperty(value="id", required = true) String id, @JsonProperty(value="state", required = true) State state, @JsonProperty("type") String type,
+    public EventDetail(@JsonProperty(value="id", required = true) String id, @JsonProperty(value="state", required = true) State state, @JsonProperty("type") String type,
              @JsonProperty("host") String host, @JsonProperty(value="timestamp", required = true) Long timestamp) {
         this.id = id;
         this.state = state;
