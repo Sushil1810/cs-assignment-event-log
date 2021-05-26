@@ -21,7 +21,7 @@ This is SpringBoot application with HSQL in-memory database.
 2. Build application by using command -> `mvn clean install`
 3. Run the Application by -> `mvn spring-boot:run -Dspring-boot.run.arguments="{$test-file-path$}"`
 
-   **Example** - mvn spring-boot:run -Dspring-boot.run.arguments="C://logfile.txt"
+   **Example** - `mvn spring-boot:run -Dspring-boot.run.arguments="C://logfile.txt"`
 4. Analyse the `application logs` & generated `eventLogDb` file for expected result.
 -----------------------------------------------------------------------------------------
 ## Result :
