@@ -17,7 +17,7 @@ This is SpringBoot application with HSQL in-memory database.
   
   **Required s/w -** Java 1.8, Apache Maven, GitHub etc..
 
-1. Clone `https://github.com/Sushil1810/cs-assignment-event-log.git` repository to local system. 
+1. Clone `https://github.com/Sushil1810/cs-assignment-event-log.git` public repository to local system. 
 2. Build application by using command -> `mvn clean install`
 3. Run the Application by -> `mvn spring-boot:run -Dspring-boot.run.arguments="{$test-file-path$}"`
 
