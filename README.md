@@ -8,7 +8,7 @@ This is SpringBoot application with HSQL in-memory database.
 1. This application takes log file in text format as input (command line argument) and process the log events.
    
    **Sample text log file location :** `src/main/resources/sampleLogEvent.txt`
-3. application will flag `alert` for the events which takes more the 4ms for letion.
+3. application will flag `alert` for the events which takes more the 4ms for completion.
 4. after processing event data, processed event detail (id, type, host and alert) will be inserted to HSQL in-memory DB.
 5. Write found event details to file based HSQLDB `eventLogDb` file in the working folder.
 
