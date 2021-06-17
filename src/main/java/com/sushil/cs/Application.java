@@ -28,7 +28,6 @@ import static com.sushil.cs.model.EventDetail.State.STARTED;
  * The type Application.
  */
 @SpringBootApplication
-@EnableJpaRepositories
 public class Application implements ApplicationRunner{
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
